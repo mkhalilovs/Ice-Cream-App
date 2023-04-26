@@ -1,0 +1,46 @@
+.footerDiv{
+    background-color: black;
+    .copyright{
+        color: white;
+    }
+    .logos{
+        svg{
+            background-color: white;
+            border: solid 1px white;
+            border-radius: 14px;
+        }
+    }
+
+    @media screen and (min-width: 325px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logos svg{
+            width: 25px;
+            height: 25px;
+            margin-top: 13px;
+            margin: 2px;
+        }
+        .copyright{
+            font-size: 11px;
+        }
+    }
+
+    @media screen and (min-width: 400px) {
+
+
+        
+    }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+
+        .logos, .copyright{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.outerDiv{
+    font-family: 'Raleway', sans-serif;
+    background-color: #f9d09f;
+
+    .div1{
+        background-image: url("https://images.pexels.com/photos/787666/pexels-photo-787666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        
+        p{
+            color: #c98b00;
+            background-color: black;
+            opacity: 0.7;
+        };
+
+    }
+    .div2{
+        background-color: burlywood;
+        border: solid #472b09;
+    }
+    .div3{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #472b09;
+        margin-top: 5px;
+        color: burlywood;
+        .article{
+            font-size: 14px;
+            .menuRoute{
+                text-decoration: none;
+                border: solid 1px;
+                background-color: burlywood;
+                color: #472b09;
+                font-weight: bold;
+                padding: 3px;
+                border-radius: 9px;
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .div1{
+            margin-top: -16px;
+            p{
+                padding: 60px;
+            };
+        }
+        .div2{
+            display: flex;
+            margin-top: -14px;
+            img{
+                width: 200px;
+                height: 142px;
+            }
+        }
+        .div3{
+            margin-top: 0px;
+        }
+    }
+
+    @media screen and (min-width: 400px) {
+
+        .div1{
+
+            p{
+                padding: 97px;
+                margin-top: 0px;
+                font-size: 22px;
+            }
+
+        }
+        .div2{
+            display: flex;
+            align-items: center;
+            font-size: 23px;
+            margin-top: -17px;
+            margin-left: 8px;
+
+        }
+        .div3{
+            .article{                
+                margin-left: 32px;
+                margin-right: 42px;
+            }
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        
+        .div1{
+            margin-right: 100px;
+            margin-left: 100px;
+            p{
+                padding: 150px;
+                font-size: 40px;
+            }
+        }
+        .div2{
+            margin-right: 100px;
+            margin-left: 100px;
+            margin-top: -35px;
+        }
+        .div3{
+            margin-right: 100px;
+            margin-left: 100px;
+            display: flex;
+            justify-content: space-between;
+            .article{
+                h3{
+                    font-size: 30px;
+                }
+                p{    
+                    font-size: 20px;
+                }
+                .menuRoute{
+                    padding: 12px;
+                    border-radius: 21px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

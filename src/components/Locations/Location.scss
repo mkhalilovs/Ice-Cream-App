@@ -1,0 +1,47 @@
+.bigDiv{
+    font-family: 'Raleway', sans-serif;
+    background-color: #f9d09f;
+
+
+
+    .innerDiv div p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    @media screen and (max-width: 400px) {
+        margin-top: -19px;
+        .innerDiv, img{
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 320px;
+        }
+    }
+
+    @media screen and (min-width: 400px) {
+        margin-top: -19px;
+        .innerDiv, img{
+            width: 400px;
+            margin-left: 11px;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img{    
+            width: 400px;
+            height: 400px;
+            margin-top: 108px;
+        }
+
+        .innerDiv, img{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+}
